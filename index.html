@@ -406,7 +406,7 @@ else document.getElementById('config-notice').style.display='block';
 // ── Local helpers ──
 function loadLocal(){ try{ return JSON.parse(localStorage.getItem('pv_local')||'{}'); }catch{ return {}; } }
 function saveLocal(o){ localStorage.setItem('pv_local', JSON.stringify(o)); }
-function getTeamNames(){ return loadLocal().teams||['Group 1','Group 2','Group 3','Group 4','Group 5','Group 6','Group 7']; }
+function getTeamNames(){ return loadLocal().teams||['Northern India','Western India','Eastern India','Southern India','Central India','NorthEast India','India']; }
 function getAdminPin(){ return loadLocal().pin||'1234'; }
 function getRevealPin(){ return loadLocal().revealPin||'0000'; }
 function getJudgePin(){ return loadLocal().judgePin||'5678'; }
